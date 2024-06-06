@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-sale=1.0">
+      <title>EFS | Survey</title>
+      <link rel="stylesheet" href="efs-survey.css">
+    <body>
+      <header>
+        <h1 id="title">EFS SURVEY</h1>
+        <p id="description">Help us make your experience and the experience of others better!</p>
+      </header>
+      <form id="survey-form">
+        <main>
+          <article>
+            <label id="name-label" for="name">Name<input type="text" id="name" placeholder="Enter your name" required></label>
+          </article>
+          <article>
+            <label id="email-label" for="email">Email<input type="email" id="email" placeholder="Enter your Email" required></label>
+          </article>
+          <article>
+            <label id="number-label" for="number">Age (optional)<input type="number" id="number" min="13" max="120" placeholder="Age"></label>
+          </article>
+          <article>
+            <label id="dropdown-label" for="dropdown">
+              What describes your current role?
+              <select id="dropdown">
+                <option>Unemployed</option>
+                <option>Full-Time Student</option>
+                <option>Full-Time Job</option>
+                <option>Part-Time Job</option>
+                <option>Rather Not Say</option>
+                <option>Other</option>
+              </select>
+            </label>
+          </article>
+          <fieldset>
+            <p>Would you recommend EFS to a friend?</p>
+            <article>
+              <label for="yes"><input type="radio" id="yes" name="would-recommend" value="yes"> I would</label>
+            </article>
+            <article>
+              <label for="no"><input type="radio" id="no" name="would-recommend" value="no"> I would not</label>
+            </article>
+            <article>
+              <label for="unsure"><input type="radio" id="unsure" name="would-recommend" value="unsure"> I'm not sure</label>
+            </article>
+          </fieldset>
+          <fieldset>
+            <p>What Features do you like the most?</p>
+            <article>
+              <label for="feature1"><input type="checkbox" id="feature1" value="feature1"> Sleep Schedule Tracker</label>
+            </article>
+            <article>
+              <label for="feature2"><input type="checkbox" id="feature2" value="feature2"> Calendar Integration</label>
+            </article>
+            <article>
+              <label for="feature3"><input type="checkbox" id="feature3" value="feature3"> EFS Timer</label>
+            </article>
+            <article>
+              <label for="feature4"><input type="checkbox" id="feature4" value="feature4"> Pomodoro Timer</label>
+            </article>
+            <article>
+              <label for="feature5"><input type="checkbox" id="feature5" value="feature5"> Leaderboard System</label>
+            </article>
+          </fieldset>
+          <label for="recommendations">Have any recommendations? <textarea id="recommendations" placeholder="How could we improve the app?" rows="5" cols="50"></textarea></label>
+          <button type="submit" id="submit">Submit</button>
+        </main>
+        <footer>
+          <p>Thank you for taking the time to complete this survey!</p>
+        </footer>
+      </form>
+    </body>
+  </html>
