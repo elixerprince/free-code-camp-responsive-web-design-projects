@@ -82,3 +82,7 @@ a {
   color: rgb(255, 90, 0);
   font-weight: bold;
 }
+
+.copy {
+  text-align: center;
+}
