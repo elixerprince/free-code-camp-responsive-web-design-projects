@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html title="This is the HTML tag and refers to the entire document" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This was a page made in order to practice the  3 main display CSS properties.">
+  <title>Display Property Cheat Sheet</title>
+  <style>
+    * {
+      padding: 10px;
+      text-align: center;
+      font-size: 1.2rem;
+      outline: 2px solid rgb(255, 127, 0);
+      margin: 20px 0;
+      background-color: rgb(255, 255, 255);
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      list-style: none;
+    }
+
+    html {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      margin: 0;
+      background-color: rgb(0, 0, 255);
+    }
+
+    header, main, footer {
+      background-color: rgb(255, 255, 0);
+    }
+
+    .section {
+      background-color: burlywood;
+    }
+
+    .set-width {
+      width: 50%;
+    }
+
+    .inline-span {
+      display: inline-block;
+    }
+
+    .no-outline {
+      outline: unset;
+      background-color: transparent;
+    }
+
+    #link {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body title=" The <body> Background always takes up entire document regardless of actual size">
+  Body
+  <header id="top" title="The <header> is a Block level element">
+    Header
+    <img src="" alt="Image" title="The <img> is an Inline level element">
+    <h1 title="The <h1 - h6> are Block kevel elements">Header</h1>
+  </header>
+  <main title="The <main> is a Block level element">
+    Main
+    <p title="The <p> is a Block level element">Paragraph</p>
+    <figure title="The <figure> is a Block level element">
+      Figure
+      <figcaption title="The <figcaption> is a Block level element">Figcaption</figcaption>
+    </figure>
+    <div title="The <div> is a Block level element">Div</div>
+    <section title="The <section> is a Block level element">Section</section>
+    <article title="The <article> is a Block level element">Article</article>
+  </main>
+  <section class="section" aria-labelledby="display-header" title="The <section> is a Block level element">
+    Section
+    <h2 id="display-header">Display: Behaviour</h2>
+    <div title="This is a Block level element">A block level element takes up the space of the whole parent container.</div>
+    <div class="set-width" title="This is a Block level element">A block level element can be resized but it will always take up the entire line even if there is extra space after for another element.</div>
+    <div class="no-outline">
+      <span class="inline-span" title="The <span> is an Inline level element so it cannot be resized. The only exception is an <img> element or other replace elements">This span can fit beside the text above but won't because the extra space is replaced by margin.</span>
+    </div>
+  </section>
+  <footer title="The <footer> is a Block level element">
+    Footer
+    <a href="#top" id="link" title="The <a> is an Inline level element">Link</a>
+    <address class="section" title="The <address> is a Block level element">
+      Address
+      <ul title="The <ul> is a Block level element">
+        Unordered List
+        <li title="The <li> is a Block level element">List Item</li>
+        <li title="The <li> is a Block level element">List Item</li>
+      </ul>
+    </address>
+    <p class="no-outline" title="Copyright Information">Elixer Prince &copy; Copyright 2024</p>
+  </footer>
+</body>
+</html>
