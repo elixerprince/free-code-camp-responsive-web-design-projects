@@ -1,11 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>
+        <h1>WEB DEVELOPMENT DOCUMENTATION</h1>
+        <hr class="line">
+      </header>
+      <ul>
+        <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+        <hr class="line">
+        <li><a href="#HTML" class="nav-link">HTML</a></li>
+        <hr class="line">
+        <li><a href="#CSS" class="nav-link">CSS</a></li>
+        <hr class="line">
+        <li><a href="#JavaScript" class="nav-link">JavaScript</a></li>
+        <hr class="line">
+        <li><a href="#Frameworks" class="nav-link">Frameworks</a></li>
+        <hr class="line">
+        <li><a href="#Backend_Development_Languages" class="nav-link">Backend Development Languages</a></li>
+        <hr class="line"> 
+        <li><a href="#APIs" class="nav-link">APIs</a></li>
+        <hr class="line">
+        <li><a href="#Conclusion" class="nav-link">Conclusion</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header>
+          <h2>Introduction</h2>
+        </header>
+        <p>Web development refers to the overall process of creating websites or web applications, including the project's design, layout, coding, content creation, and functionality. It involves using a combination of programming languages, tools, and frameworks to bring a website or web application to life.</p>
+        <p>Web development can be broken down into two main categories: front-end development and back-end development. Front-end development focuses on the user interface and user experience of a website, while back-end development focuses on the server-side logic and database management that powers the website.</p>
+        <p><b>The Front-end Languages are:</b></p>
+        <ul>
+          <li><a href="#HTML">HTML</a></li>
+          <li><a href="#CSS">CSS</a></li>
+          <li><a href="#JavaScript">JavaScript</a></li> 
+        </ul>
+      </section>
+      <section id="HTML" class="main-section">
+        <header>
+          <h2>HTML</h2>
+        </header>
+        <p>HyperText Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+        <p><b>Here is some example HTML code:</b></p>
+        <code>
+          &lt;!DOCTYPE html&gt;<br>
+          &lt;html&gt;<br>
+          &lt;head&gt;<br>
+          &lt;title&gt;Page Title&lt;/title&gt;<br>
+          &lt;/head&gt;<br>
+          &lt;body&gt;<br>
+          &lt;h1&gt;This is a Heading&lt;/h1&gt;<br>
+          &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+          &lt;/body&gt;<br>
+          &lt;/html&gt;
+        </code>
+        <code>
+          &lt;h1&gt;This is a smaller Heading&lt;/h1&gt;<br>
+          &lt;p&gt;This is another paragraph.&lt;/p&gt;
+        </code>
+      </section>
+      <section id="CSS" class="main-section">
+        <header>
+          <h2>CSS</h2>
+        </header>
+        <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+        <p><b>Here is some example CSS code:</b></p>
+        <code>
+          body {<br>
+          &nbsp;&nbsp;background-color: lightblue;<br>
+          }<br>
+          h1 {<br>
+          &nbsp;&nbsp;color: white;<br>
+          &nbsp;&nbsp;text-align: center;<br>
+          }<br>
+          p {<br>
+          &nbsp;&nbsp;font-family: verdana;<br>
+          &nbsp;&nbsp;font-size: 20px;<br>
+          }
+        </code>
+        <code>
+          h1 {<br>
+          &nbsp;&nbsp;color: blue;<br>
+          &nbsp;&nbsp;text-align: center;<br>
+          }<br>
+          p {<br>
+          &nbsp;&nbsp;font-family: verdana;<br>
+          &nbsp;&nbsp;font-size: 20px;<br>
+          }
+        </code>
+      </section>
+      <section id="JavaScript" class="main-section">
+        <header>
+          <h2>JavaScript</h2>
+        </header>
+        <p>JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is a programming language that is characterized as dynamic, weakly typed, prototype-based, and multi-paradigm.</p>
+        <p><b>Here is some example JavaScript code:</b></p>
+        <code>
+          document.getElementById("demo").innerHTML = "Hello JavaScript";<br>
+          function myFunction() {<br>
+          &nbsp;&nbsp;document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
+          }
+        </code>
+      </section>
+      <section id="Frameworks" class="main-section">
+        <header>
+          <h2>Frameworks</h2>
+        </header>
+        <p>Frameworks are pre-written code libraries that help developers build websites and web applications more quickly and efficiently. They provide a foundation of reusable code, components, and tools that can be used to streamline the development process.</p>
+        <p><b>Some popular front-end frameworks include:</b></p>
+        <ul class="unset">
+          <li>Bootstrap</li>
+          <img src="https://shorturl.at/b1wmY" alt="Bootstrap Logo">
+          <li>React</li>
+          <img src="https://shorturl.at/feoqH" alt="React Logo">
+          <li>Angular</li>
+          <img src="angular-logo.png" alt="Angular Logo">
+        </ul>
+      </section>
+      <section id="Backend_Development_Languages" class="main-section">
+        <header>
+          <h2>Backend Development Languages</h2>
+        </header>
+        <p>Backend development languages are used to create the server-side logic and database management that powers a website or web application. These languages are responsible for processing user input, interacting with databases, and generating dynamic content.</p>
+        <p><b>Some popular backend development languages include:</b></p>
+        <ul class="unset">
+          <li>Python</li>
+          <li>Java</li>
+          <li>PHP</li>
+          <li>Ruby</li>
+        </ul>
+      </section>
+      <section id="APIs" class="main-section">
+        <header>
+          <h2>APIs</h2>
+        </header>
+        <p>Application Programming Interfaces (APIs) are sets of rules and protocols that allow different software applications to communicate with each other. They define the methods and data formats that applications can use to request and exchange information.</p>
+        <p><b>Some common types of APIs include:</b></p>
+        <ul>
+          <li><a href="https://www.w3schools.com/js/js_api_intro.asp" target="_blank">Web APIs</a></li>
+          <li><a href="https://shorturl.at/kDjBg" target="_blank">RESTful APIs</a></li>
+          <li><a href="https://shorturl.at/2zqQU" target="_blank">SOAP APIs</a></li>
+          <li><a href="https://shorturl.at/4alfe">GraphQL APIs</a></li>
+        </ul>
+      </section>
+      <section id="Conclusion" class="main-section">
+        <header>
+          <h2>Conclusion</h2>
+        </header>
+        <p>Web development is a complex and multifaceted field that requires a diverse set of skills and knowledge. By mastering the languages, frameworks, and tools used in web development, you can create dynamic and engaging websites and web applications that provide value to users and businesses alike.</p>
+      </section>
+      <footer>
+        <p>Created by <a href="https://www.linkedin.com/in/daniel-leith/" target="_blank">Daniel Leith</a></p>
+        <p>Elixer Prince Copyright &copy; 2024</p>
+      </footer>
+  </body>
+
 </html>
